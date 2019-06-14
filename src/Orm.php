@@ -1,11 +1,11 @@
 <?php
 /**
  * Classe de orm bitio
- * 
+ *
  * @package Orm
- * 
+ *
  * @author iomar <iomargorges@hotmail.com>
- * 
+ *
  * @since 1.0
  */
 
@@ -18,11 +18,10 @@ use LessQL\Database;
  */
 class Orm
 {
-    var $model;
+    public $model;
 
     public function __construct()
     {
-        
     }
     
     /**
@@ -34,14 +33,12 @@ class Orm
     {
         $options = [];
         return base_path();
-        // $pdo = new \PDO("xx", "iomar", "33iomar33");
-        // $this->model = new Database($pdo);
     }
 
     /**
      * Get the value of model
      * @return mixed
-     */ 
+     */
     public function getModel()
     {
         return $this->model;
@@ -51,7 +48,7 @@ class Orm
      * Set the value of model
      *
      * @return  self
-     */ 
+     */
     public function setModel($model)
     {
         $this->model = $model;
