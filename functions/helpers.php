@@ -1,4 +1,41 @@
 <?php
+use orm\Kernel\VarDumper;
+
+if (! function_exists('d')) {
+
+    /**
+     * Dump the passed variables
+     *
+     * @param
+     *            mixed
+     * @return void
+     */
+    function d()
+    {
+        array_map(function ($x) {
+            (new VarDumper())->dump($x);
+        }, func_get_args());
+    }
+}
+
+if (! function_exists('dd')) {
+
+    /**
+     * Dump the passed variables
+     *
+     * @param
+     *            mixed
+     * @return void
+     */
+    function dd()
+    {
+        array_map(function ($x) {
+            (new VarDumper())->dump($x);
+        }, func_get_args());
+
+        die();
+    }
+}
 
 
 
