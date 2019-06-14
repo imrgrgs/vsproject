@@ -22,6 +22,7 @@ class Orm
 
     public function __construct()
     {
+        //TODO fazer alguma coisa aqui
     }
     
     /**
