@@ -1,14 +1,7 @@
 <?php
 /**
- * Classe de orm bitio - teste de git
- *
- * @package Orm
- *
- * @author iomar <iomargorges@hotmail.com>
- *
- * @since 1.0
+ * Classe Orm
  */
-
 namespace orm;
 
 use LessQL\Database;
@@ -18,27 +11,33 @@ use LessQL\Database;
  */
 class Orm
 {
+    /**
+     * Undocumented variable
+     *
+     * @var [type]
+     */
     public $model;
-
+    /**
+     * Undocumented function
+     */
     public function __construct()
     {
         //TODO fazer alguma coisa aqui
     }
-    
     /**
      * Undocumented function
      *
-     * @return string contains the base path for this aplication
+     * @return void
      */
     public function model()
     {
         $options = [];
         return base_path();
     }
-
     /**
-     * Get the value of model
-     * @return mixed
+     * Undocumented function
+     *
+     * @return void
      */
     public function getModel()
     {
@@ -46,9 +45,10 @@ class Orm
     }
 
     /**
-     * Set the value of model
+     * Undocumented function
      *
-     * @return  self
+     * @param [type] $model
+     * @return void
      */
     public function setModel($model)
     {

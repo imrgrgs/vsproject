@@ -1,13 +1,12 @@
 <?php
 use orm\Kernel\VarDumper;
 
-if (! function_exists('d')) {
+if (!function_exists('d')) {
 
     /**
      * Dump the passed variables
      *
-     * @param
-     *            mixed
+     * @param mixed $x
      * @return void
      */
     function d()
@@ -18,7 +17,7 @@ if (! function_exists('d')) {
     }
 }
 
-if (! function_exists('dd')) {
+if (!function_exists('dd')) {
 
     /**
      * Dump the passed variables
@@ -36,8 +35,6 @@ if (! function_exists('dd')) {
         die();
     }
 }
-
-
 
 if (!function_exists('env')) {
 
