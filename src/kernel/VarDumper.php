@@ -2,16 +2,20 @@
 
 namespace orm\Kernel;
 
-use Symfony\Component\VarDumper\Dumper\CliDumper;
 use Symfony\Component\VarDumper\Cloner\VarCloner;
+use Symfony\Component\VarDumper\Dumper\CliDumper;
 
+/**
+ * Undocumented class
+ */
 class VarDumper
 {
 
     /**
-     * Dump a value with elegance.
+     * Undocumented function
      *
-     * @param  mixed $value
+     * @param [type] $value
+     * @return void
      */
     public function dump($value)
     {
