@@ -15,7 +15,7 @@ class VarDumper
     /**
      * Undocumented function
      *
-     * @param [type] $value
+     * @param mixed $value
      * @return void
      */
     public function dump($value)

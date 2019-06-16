@@ -14,7 +14,7 @@ class Orm
     /**
      * Undocumented variable
      *
-     * @var [type]
+     * @var string
      */
     public $model;
     /**
@@ -47,7 +47,7 @@ class Orm
     /**
      * Undocumented function
      *
-     * @param [type] $model
+     * @param string $model
      * @return void
      */
     public function setModel($model)
